@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.6.0
+  sdk: '>=3.4.4 <4.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -33,7 +33,42 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.8
+  cupertino_icons: ^1.0.6
+
+  image_picker: ^1.1.2
+    # svg 패키지
+    flutter_svg: ^2.0.10+1
+    #GetX 패키지
+    get: ^4.6.6
+    animated_text_kit: ^4.2.2
+    # google 로그인
+    google_sign_in: ^6.2.1
+    # google ios 로그인
+    google_sign_in_ios: ^5.7.6
+
+    # 로그인 토큰 저장
+    flutter_secure_storage: 4.2.1
+    #  flutter_secure_storage: ^8.0.0
+    #  uni_links: ^0.5.1
+    url_launcher: ^6.0.9
+    blinking_text: ^1.0.4
+    http: ^1.2.0
+    card_swiper: ^3.0.1
+    swipable_stack: ^2.0.0
+    firebase_auth: ^5.1.4
+    firebase_core: ^3.3.0
+
+    # 녹음 및 오디오 재생 관련
+    path_provider: ^2.1.4
+    audioplayers: ^6.0.0
+    permission_handler: ^11.3.1
+    #  flutter_sound: ^9.11.2
+    flutter_sound: ^9.6.0
+    path: ^1.8.0
+    video_player: ^2.9.1
+
+    # 앱 아이콘 설정
+    flutter_launcher_icons: ^0.13.1
 
 dev_dependencies:
   flutter_test:
@@ -44,7 +79,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^5.0.0
+  flutter_lints: ^3.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -56,6 +91,14 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  assets:
+    - assets/img/
+    - assets/icons/main_menu/
+    - assets/icons/my_page/
+    - assets/icons/writing_page/
+    - assets/icons/poem_loading/
+    - assets/images/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
@@ -87,3 +130,34 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+  fonts:
+    - family: NotoSans
+      fonts:
+        - asset: assets/fonts/NotoSansKR-Black.otf
+          weight: 900
+        - asset: assets/fonts/NotoSansKR-Bold.otf
+          weight: 700
+        - asset: assets/fonts/NotoSansKR-Medium.otf
+          weight: 500
+        - asset: assets/fonts/NotoSansKR-Regular.otf
+          weight: 400
+        - asset: assets/fonts/NotoSansKR-Light.otf
+          weight: 300
+        - asset: assets/fonts/NotoSansKR-Thin.otf
+          weight: 100
+    - family: KoPubBatangPro
+      fonts:
+        - asset: assets/fonts/KoPub Batang_Pro Bold.otf
+          weight: 900
+        - asset: assets/fonts/KoPub Batang_Pro Light.otf
+          weight: 700
+        - asset: assets/fonts/KoPub Batang_Pro Medium.otf
+          weight: 500
+        - asset: assets/fonts/KoPub Dotum_Pro Bold.otf
+          weight: 400
+        - asset: assets/fonts/KoPub Dotum_Pro Light.otf
+          weight: 300
+        - asset: assets/fonts/KoPub Dotum_Pro Medium.otf
+          weight: 100
+
