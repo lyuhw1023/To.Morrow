@@ -60,7 +60,7 @@ AI가 감정을 분석하여, 해당 감정과 연관된 시 및 창작 글을 �
 3️. Loading (로딩) 페이지
 > AI가 데이터를 분석하고 추천하는 동안 로딩 화면 제공<br>
 서버에서 데이터를 성공적으로 받아오면 확인 버튼이 활성화됨<br>
-FutureBuilder 및 Lottie 애니메이션을 활용하여 UI/UX 개선<br>
+애니메이션을 활용하여 UI/UX 개선<br>
 <img src="https://github.com/user-attachments/assets/c66bfa17-69ed-42e9-a48a-9554590950b9" width="200px"/>
 <img src="https://github.com/user-attachments/assets/8d8b0605-b301-443b-8488-574bc1f6fb59" width="200px"/>
 
@@ -68,9 +68,8 @@ FutureBuilder 및 Lottie 애니메이션을 활용하여 UI/UX 개선<br>
 <br><br>
 
 4️. Main (메인) 페이지 및 결과 페이지
-> 사용자는 시 또는 창작물을 선택하여 감상<br>
-감상한 후, 공유하거나 피드백을 남길 수 있음<br>
-감정 기반 추천을 강화하여 더 개인화된 창작 경험 제공<br>
+> AI가 감정에 따른 시를 추천해주고 사용자는 시 또는 창작물 감상 할 수 있음<br>
+책접기 기능을 통해 공감 표시 가능<br>
 <img src="https://github.com/user-attachments/assets/6f68813a-4b04-4517-83b9-9110de2657e7" width="200px"/>
 
 <br><br>
